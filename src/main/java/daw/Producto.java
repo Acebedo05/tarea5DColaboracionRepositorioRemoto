@@ -44,6 +44,17 @@ public class Producto {
     public void setDescuento(double descuento) {
         this.descuento = descuento;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Producto{");
+        sb.append("marca=").append(marca);
+        sb.append(", precio=").append(precio);
+        sb.append(", descuento=").append(descuento);
+        sb.append('}');
+        return sb.toString();
+    }
     
     
 }
